@@ -1,0 +1,83 @@
+<view class="search">
+  <view class="searchBg">
+    <input type="text" placeholder="请输入歌曲名或歌手名" placeholder-class="holder" bindblur="searchSong" />
+  </view>
+  <view class="btn">取消</view>
+</view>
+<view class="hr"></view>
+<block wx:for="{{songs}}">
+  <block wx:if="{{item.type==1}}">
+    <view class="item" bindtap="playSong" id="{{item.id}}">
+      <view class="add">
+        <image src="/images/music/add.jpg" style="width:20px;height:20px;"></image>
+      </view>
+      <view class="song">
+        <view class="name">
+          <view>{{item.name}}</view>
+          <view class="mark">HQ</view>
+          <view class="mark">MV</view>
+        </view>
+        <view class="singer">{{item.singer}}</view>
+      </view>
+      <view class="menu">
+        <image src="/images/music/caidan-bai.jpg" style="width:30px;height:24px;"></image>
+      </view>
+    </view>
+    <view class="hr"></view>
+  </block>
+  <block wx:if="{{item.type==2}}">
+    <view class="item1" >
+      <view class="add">
+        <view>
+          <image src="{{item.img}}" style="width:68px;height:70px;"></image>
+        </view>
+      </view>
+      <view class="songInfo">
+        <view>{{item.singer}}-{{item.name}}</view>
+        <view>
+          <image src="/images/music/xin.jpg" style="width:22px;height:20px;"></image>
+          <image src="/images/music/fenxiang.jpg" style="width:22px;height:20px;"></image>
+          <image src="/images/music/xiazai.jpg" style="width:26px;height:20px;"></image>
+          <image src="/images/music/mv.jpg" style="width:26px;height:20px;"></image>
+          <image src="/images/music/caidan-hui.jpg" style="width:30px;height:20px;"></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</block>
+<!--
+<view class="item">
+  <view class="add">
+    <image src="/images/music/add.jpg" style="width:20px;height:20px;"></image>
+  </view>
+  <view class="song">
+    <view class="name">
+      <view>好想你</view>
+      <view class="mark">HQ</view>
+      <view class="mark">MV</view>
+    </view>
+    <view class="singer">网络歌手</view>
+  </view>
+  <view class="menu">
+    <image src="/images/music/caidan-bai.jpg" style="width:30px;height:24px;"></image>
+  </view>
+</view>
+<view class="hr"></view>
+<view class="item1">
+  <view class="add">
+    <view>
+      <image src="/images/singer/linjunjie.jpg" style="width:68px;height:70px;"></image>
+    </view>
+  </view>
+  <view class="songInfo">
+    <view>林俊杰-美人鱼</view>
+    <view>
+      <image src="/images/music/xin.jpg" style="width:22px;height:20px;"></image>
+      <image src="/images/music/fenxiang.jpg" style="width:22px;height:20px;"></image>
+      <image src="/images/music/xiazai.jpg" style="width:26px;height:20px;"></image>
+      <image src="/images/music/mv.jpg" style="width:26px;height:20px;"></image>
+      <image src="/images/music/caidan-hui.jpg" style="width:30px;height:20px;"></image>
+    </view>
+  </view>
+</view>
+-->

@@ -1,0 +1,105 @@
+.bg{
+  height: 160px;
+  background-color: #0976D5;
+  padding: 10px;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top:10px;
+}
+.nav-item{
+  width: 25%;
+  font-size: 13px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  line-height: 30px;
+}
+.line{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+.music{
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  margin-left: 10px;
+}
+.local{
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.local text{
+  margin-right:20px;
+}
+.count{
+  font-size: 13px;
+  color: #cccccc;
+}
+.play{
+  position: absolute;
+  right: 40px;
+}
+.special{
+  width:33%;
+  color: #000000;
+}
+.tool{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.tool view{
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tool-nav{
+  width: 16.5%;
+  color: #000000;
+}
+.zhuanji{
+  font-weight: normal;
+  position: absolute;
+  right: 10px;
+  font-size: 13px;
+}
+.playMusic{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #cccccc;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.left{
+  padding:10px;
+}
+.right{
+  width:100%;
+  margin-left: 10px;
+  align-items: center;
+}
+.info{
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+}
+.songInfo{
+  width: 50%;
+  font-size: 13px;
+}
+.name{
+  font-weight: bold;
+}
+.btn{
+  width: 60%;
+}
+.btn image{
+  margin-right: 15px;
+}

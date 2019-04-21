@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/localMusic/localMusic"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1797D4",
+    "navigationBarTitleText": "酷狗音乐",
+    "navigationBarTextStyle":"white"
+  }
+}

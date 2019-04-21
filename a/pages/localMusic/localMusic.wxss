@@ -1,0 +1,109 @@
+.content{
+  font-family: "Microsoft YaHei";
+}
+.type{
+  display: flex;
+  flex-direction: row;
+}
+.select{
+  font-size: 16px;
+  color: #1797D4;
+  width:25%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 5rpx solid #1797D4;
+}
+.default{
+  width:25%;
+  font-size: 16px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.count{
+  font-size: 11px;
+}
+.hr{
+  border:1px solid #cccccc;
+  opacity: 0.2;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  padding:5px;
+}
+.searchBg{
+  background-color: #f2f2f2;
+  width: 80%;
+  border-radius: 5px;
+  height: 30px;
+}
+.search input{
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.holder{
+  font-size: 13px;
+}
+.btn{
+  color: #1797D4;
+  font-size: 13px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  height: 40px;
+  align-items: center;
+}
+.add{
+  width:10%;
+}
+.song{
+  width:80%;
+}
+.menu{
+  width:10%;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: bold;
+}
+.singer{
+  font-size: 13px;
+  color: #666666;
+  margin-top:5px;
+}
+.mark{
+  border:1px solid #1797D4;
+  width:20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 9px;
+  color: #1797D4;
+  font-weight: normal;
+  height: 13px;
+}
+.item1{
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F5F5;
+  height: 70px;
+}
+.songInfo{
+  margin-left: 40px;
+  padding:10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.songInfo image{
+  margin-top:10px;
+  margin-right: 30px;
+}

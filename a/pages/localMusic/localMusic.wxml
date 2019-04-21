@@ -1,0 +1,23 @@
+<view class="content">
+  <view class="type">
+    <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">单曲<text class="count">/17</text></view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">歌手<text class="count">/15</text></view>
+    <view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchNav">专辑<text class="count">/12</text></view>
+    <view class="{{currentTab==3?'select':'default'}}" data-current="3" bindtap="switchNav">文件夹<text class="count">/2</text></view>
+  </view>
+  <view class="hr"></view>
+  <swiper current="{{currentTab}}" style="height:800px;">
+    <swiper-item>
+       <include src="single.wxml" />
+    </swiper-item>
+    <swiper-item>
+       <include src="singer.wxml" />
+    </swiper-item>
+    <swiper-item>
+       <include src="album.wxml" />
+    </swiper-item>
+    <swiper-item>
+       <include src="folder.wxml" />
+    </swiper-item>
+  </swiper>
+</view>

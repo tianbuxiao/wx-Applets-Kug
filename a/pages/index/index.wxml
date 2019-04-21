@@ -1,0 +1,161 @@
+<view class="content">
+  <view class="bg">
+    <view class="nav">
+      <view class="nav-item">
+        <view>
+          <image src="/images/icon/xh.jpg" style="width:32px;height:28px;"></image>
+        </view>
+        <view>电影票</view>
+      </view>
+      <view class="nav-item">
+        <view>
+          <image src="/images/icon/gd.jpg" style="width:32px;height:28px;"></image>
+        </view>
+        <view>演出票</view>
+      </view>
+      <view class="nav-item">
+        <view>
+          <image src="/images/icon/xz.jpg" style="width:32px;height:28px;"></image>
+        </view>
+        <view>优惠券</view>
+      </view>
+      <view class="nav-item">
+        <view>
+          <image src="/images/icon/zj.jpg" style="width:32px;height:28px;"></image>
+        </view>
+        <view>影城卡</view>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="music">
+      <view>
+        <image src="/images/icon/phone.jpg" style="width:16px;height:25px;"></image>
+      </view>
+      <view class="local" bindtap="localMusic">
+        <text>本地音乐</text><text class="count">17首></text>
+      </view>
+      <view class="play">
+        <image src="/images/icon/play.jpg" style="width:27px;height:27px;"></image>
+      </view>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="nav-item special">
+      <view>
+        <image src="/images/icon/yk.jpg" style="width:57px;height:57px;"></image>
+      </view>
+      <view>乐库</view>
+    </view>
+    <view class="nav-item special">
+      <view>
+        <image src="/images/icon/dt.jpg" style="width:57px;height:57px;"></image>
+      </view>
+      <view>电台</view>
+    </view>
+    <view class="nav-item special">
+      <view>
+        <image src="/images/icon/kq.jpg" style="width:57px;height:57px;"></image>
+      </view>
+      <view>酷群</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="tool">
+    <view>
+      <image src="/images/icon/gj.jpg" style="width:20px;height:20px;"></image>
+    </view>
+    <view>工具</view>
+  </view>
+  <view class="nav">
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/yx.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>游戏</view>
+    </view>
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/cg.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>传歌</view>
+    </view>
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/sm.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>扫描</view>
+    </view>
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/tg.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>挑歌</view>
+    </view>
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/ls.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>铃声</view>
+    </view>
+    <view class="nav-item tool-nav">
+      <view>
+        <image src="/images/icon/sq.jpg" style="width:20px;height:17px;"></image>
+      </view>
+      <view>识曲</view>
+    </view>
+
+  </view>
+  <view class="line"></view>
+  <view class="tool">
+    <view>
+      <image src="/images/icon/tuiguang.jpg" style="width:20px;height:20px;"></image>
+    </view>
+    <view>推广</view>
+    <view class="zhuanji">鹿晗全新数字专辑《Venture》</view>
+  </view>
+  <view class="line"></view>
+  <!--
+  <view class="playMusic">
+     <view class="left" bindtap="detail" id="1">
+        <image src="/images/icon/zza.jpg" style="width:80px;height:80px;"></image>
+     </view>
+     <view class="right">
+        <view class="info">
+          <view class="songInfo">
+             <view class="name">好想你</view>
+             <view>朱主爱</view>
+          </view>
+          <view class="btn">
+             <image src="/images/play/stop.jpg" style="width:20px;height:20px;" bindtap="paly" id="1"></image>
+             <image src="/images/play/play.jpg" style="width:20px;height:20px;" bindtap="stop" id="1"></image>
+             <image src="/images/play/kuaijin.jpg" style="width:20px;height:20px;"></image>
+             <image src="/images/play/duilie.jpg" style="width:20px;height:20px;"></image>
+          </view>
+        </view>
+     </view>
+  </view>
+  -->
+  <view class="playMusic">
+    <view class="left" bindtap="detail" id="{{song.id}}">
+      <image src="{{song.img}}" style="width:80px;height:80px;"></image>
+    </view>
+    <view class="right">
+      <view class="info">
+        <view class="songInfo">
+          <view class="name">{{song.name}}</view>
+          <view>{{song.singer}}</view>
+        </view>
+        <view class="btn">
+          <block wx:if="{{playing==false}}">
+            <image src="/images/play/stop.jpg" style="width:20px;height:20px;" bindtap="play" id="{{song.id}}"></image>
+          </block>
+          <block wx:if="{{playing==true}}">
+            <image src="/images/play/play.jpg" style="width:20px;height:20px;" bindtap="stop" id="{{song.id}}"></image>
+          </block>
+          <image src="/images/play/kuaijin.jpg" style="width:20px;height:20px;"></image>
+          <image src="/images/play/duilie.jpg" style="width:20px;height:20px;"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
